@@ -1,4 +1,4 @@
- package com.example.anuvadak;
+package com.example.anuvadak;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +13,7 @@ import android.widget.Button;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
- public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
 //     Button btnCamera = findViewById(R.id.btn_camera);
 //        btnCamera.setOnClickListener(new View.OnClickListener() {
