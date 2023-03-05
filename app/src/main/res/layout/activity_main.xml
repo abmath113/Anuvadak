@@ -6,39 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="DashBoard"-->
-<!--        android:textSize="50dp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:textColor="@color/black"/>-->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/box_background"
-        android:padding="16dp"
-        android:orientation="vertical">
+        android:layout_above="@+id/bottom_navigator"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:padding="10dp">
 
-        <TextView
-            android:id="@+id/paragraphTextView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Indian Sign Language (ISL) is a visual language used by the deaf community in India. It is a natural language with its own grammar, syntax, and vocabulary, and is not based on any spoken language.
+            android:orientation="vertical">
 
-ISL has been developed and used by deaf people in India for many years. It is used in a variety of settings, including schools for the deaf, deaf clubs, and community gatherings.
+            <TextView
+                android:id="@+id/titlettext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Indian Sign Language (ISL)"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
 
-ISL uses hand gestures, facial expressions, and body language to convey meaning. Each gesture represents a word or concept, and can be combined with other gestures to form more complex ideas and sentences.
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingVertical="10dp"
+                app:srcCompat="@drawable/titlepic" />
 
-There are many different sign languages used around the world, and Indian Sign Language is unique to India. While there are some similarities between ISL and other sign languages, each sign language is its own distinct language with its own grammar and vocabulary."
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            <TextView
+                android:id="@+id/aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indian Sign Language (ISL) is a visual language used by the deaf community in India. It is a natural language with its own grammar, syntax, and vocabulary, and is not based on any spoken language. ISL has been developed and used by deaf people in India for many years. It is used in a variety of settings, including schools for the deaf, deaf clubs, and community gatherings. ISL uses hand gestures, facial expressions, and body language to convey meaning. Each gesture represents a word or concept, and can be combined with other gestures to form more complex ideas and sentences."
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/titlettext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Alphabets"
+                android:paddingTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingVertical="10dp"
+                app:srcCompat="@drawable/signsalphabets" />
 
 
-            />
-    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
@@ -52,3 +80,5 @@ There are many different sign languages used around the world, and Indian Sign L
 
         />
 </RelativeLayout>
+
+
