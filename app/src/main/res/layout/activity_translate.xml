@@ -16,12 +16,16 @@
     <!--        android:textColor="@color/black"/>-->
     <!-- add Camera Button to open the Camera -->
 
+
     <Button
         android:id="@+id/btn_camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigator"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="60dp"
         android:text="Open Camera" />
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigator"
@@ -33,15 +37,27 @@
         app:itemTextColor="@drawable/serlector"
         app:menu="@menu/menu" />
 
+    <ImageView
+        android:id="@+id/camera_output"
+        android:layout_width="323dp"
+        android:layout_height="338dp"
+        android:layout_above="@+id/btn_camera"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="87dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/isl_image"-->
-<!--        android:layout_width="350dp"-->
-<!--        android:layout_height="450dp"-->
-<!--        android:layout_marginStart="30dp"-->
-<!--        android:layout_marginTop="70dp"-->
-<!--        android:src="@drawable/isl_image"-->
 
-<!--        />-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/isl_image"-->
+    <!--        android:layout_width="350dp"-->
+    <!--        android:layout_height="450dp"-->
+    <!--        android:layout_marginStart="30dp"-->
+    <!--        android:layout_marginTop="70dp"-->
+    <!--        android:src="@drawable/isl_image"-->
+
+    <!--        />-->
 
 </RelativeLayout>

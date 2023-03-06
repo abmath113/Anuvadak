@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,13 +24,13 @@
         android:layout_height="116dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:src="@drawable/ic_profileimg" />
+        android:src="@drawable/isl_profile" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Abhishek Thorat"
+        android:text="Lucky"
         android:textSize="24sp"
         android:layout_below="@id/profile_image"
         android:layout_centerHorizontal="true"
@@ -40,7 +40,7 @@
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="abhishek@example.com"
+        android:text="lucky@golmaal.in"
         android:textSize="18sp"
         android:layout_below="@id/name"
         android:layout_centerHorizontal="true"
@@ -72,22 +72,42 @@
         android:id="@+id/about_me_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I am a software developer who loves to build Android apps."
+        android:text="Hey, I'm Lucky! I'm the charming prankster with killer dance moves and a wicked sense of humor. Plus, with a name like mine, you know I've got some serious luck on my side. Who wouldn't want to be friends with me?"
         android:textSize="16sp"
         android:layout_below="@id/about_me"
         android:layout_alignParentStart="true"
         android:layout_marginTop="8dp"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:typeface="monospace"/>
 
-<!--    <Spinner-->
-<!--        android:id="@+id/my_spinner"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:entries="@array/my_spinner_items"-->
-<!--        android:spinnerMode="dropdown"-->
-<!--        android:background="@drawable/my_spinner_background"-->
-<!--        android:popupBackground="@color/my_spinner_popup_background"-->
-<!--        android:dropDownVerticalOffset="48dp" />-->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_below="@id/about_me_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/my_spinner"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:spinnerMode="dropdown"-->
+    <!--        android:layout_below="@id/about_me_text"/>-->
+
+
+
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/my_spinner"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:entries="@array/my_spinner_items"-->
+    <!--        android:spinnerMode="dropdown"-->
+    <!--        android:background="@drawable/my_spinner_background"-->
+    <!--        android:popupBackground="@color/my_spinner_popup_background"-->
+    <!--        android:dropDownVerticalOffset="48dp" />-->
 
 
 
